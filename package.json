@@ -1,0 +1,158 @@
+{
+  "_args": [
+    [
+      "react-foundation-components@^0.10.2",
+      "/Users/suneel0101/Development/comp-web"
+    ]
+  ],
+  "_from": "react-foundation-components@>=0.10.2 <0.11.0",
+  "_id": "react-foundation-components@0.10.2",
+  "_inCache": true,
+  "_installable": true,
+  "_location": "/react-foundation-components",
+  "_nodeVersion": "5.8.0",
+  "_npmOperationalInternal": {
+    "host": "packages-12-west.internal.npmjs.com",
+    "tmp": "tmp/react-foundation-components-0.10.2.tgz_1457982932844_0.033463218715041876"
+  },
+  "_npmUser": {
+    "email": "hurricane0307-npm@yahoo.ca",
+    "name": "aruberto"
+  },
+  "_npmVersion": "3.7.3",
+  "_phantomChildren": {
+    "invariant": "2.2.1",
+    "loose-envify": "1.2.0"
+  },
+  "_requested": {
+    "name": "react-foundation-components",
+    "raw": "react-foundation-components@^0.10.2",
+    "rawSpec": "^0.10.2",
+    "scope": null,
+    "spec": ">=0.10.2 <0.11.0",
+    "type": "range"
+  },
+  "_requiredBy": [
+    "#DEV:/"
+  ],
+  "_resolved": "https://registry.npmjs.org/react-foundation-components/-/react-foundation-components-0.10.2.tgz",
+  "_shasum": "3c414b8edec7168f9e3337f7f2d03343f767092d",
+  "_shrinkwrap": null,
+  "_spec": "react-foundation-components@^0.10.2",
+  "_where": "/Users/suneel0101/Development/comp-web",
+  "author": {
+    "name": "aruberto"
+  },
+  "bugs": {
+    "url": "https://github.com/aruberto/react-foundation-components/issues"
+  },
+  "dependencies": {
+    "babel-runtime": "^6.6.1",
+    "classnames": "^2.2.3",
+    "dom-helpers": "^2.4.0",
+    "foundation-sites": "~6.2.0",
+    "lodash": "^4.6.1",
+    "react-overlays": "^0.6.0",
+    "react-prop-types": "^0.3.0",
+    "uncontrollable": "^3.2.1",
+    "underscore.string": "^3.3.4"
+  },
+  "description": "Foundation Sites components built with the power of React and CSS Modules",
+  "devDependencies": {
+    "autoprefixer": "^6.3.3",
+    "babel-cli": "^6.6.5",
+    "babel-core": "^6.7.2",
+    "babel-eslint": "^6.0.0-beta.6",
+    "babel-loader": "^6.2.4",
+    "babel-plugin-react-transform": "^2.0.2",
+    "babel-plugin-transform-runtime": "^6.6.0",
+    "babel-preset-es2015": "^6.6.0",
+    "babel-preset-react": "^6.5.0",
+    "babel-preset-stage-0": "^6.5.0",
+    "conventional-changelog-cli": "^1.1.1",
+    "cpy-cli": "^1.0.0",
+    "css-loader": "^0.23.1",
+    "eslint": "^2.4.0",
+    "eslint-config-airbnb": "^6.1.0",
+    "eslint-plugin-react": "^4.2.1",
+    "express": "^4.13.4",
+    "extract-text-webpack-plugin": "^1.0.1",
+    "file-loader": "^0.8.5",
+    "fs-extra": "^0.26.5",
+    "html-webpack-plugin": "^2.10.0",
+    "img-loader": "^1.2.2",
+    "jsontosass-loader": "^0.1.8",
+    "minimist": "^1.2.0",
+    "node-sass": "^3.4.2",
+    "postcss-loader": "^0.8.2",
+    "react": "^0.14.7",
+    "react-dom": "^0.14.7",
+    "react-router": "^2.0.1",
+    "react-transform-catch-errors": "^1.0.2",
+    "react-transform-hmr": "^1.0.4",
+    "redbox-react": "^1.2.2",
+    "release-it": "^2.3.1",
+    "rimraf": "^2.5.2",
+    "sass-lint": "^1.5.1",
+    "sass-loader": "^3.2.0",
+    "style-loader": "^0.13.0",
+    "through2": "^2.0.1",
+    "url-loader": "^0.5.7",
+    "webpack": "^1.12.14",
+    "webpack-dev-middleware": "^1.5.1",
+    "webpack-hot-middleware": "^2.10.0"
+  },
+  "directories": {},
+  "dist": {
+    "shasum": "3c414b8edec7168f9e3337f7f2d03343f767092d",
+    "tarball": "https://registry.npmjs.org/react-foundation-components/-/react-foundation-components-0.10.2.tgz"
+  },
+  "files": [
+    "lib"
+  ],
+  "gitHead": "17f5e031c1528e1368c03d6942d84d6546104915",
+  "homepage": "https://github.com/aruberto/react-foundation-components#readme",
+  "keywords": [
+    "css-modules",
+    "foundation",
+    "foundation-sites",
+    "react",
+    "react-component"
+  ],
+  "license": "MIT",
+  "main": "lib/index.js",
+  "maintainers": [
+    {
+      "name": "aruberto",
+      "email": "hurricane0307-npm@yahoo.ca"
+    }
+  ],
+  "name": "react-foundation-components",
+  "optionalDependencies": {},
+  "peerDependencies": {
+    "react": ">=0.14.0"
+  },
+  "readme": "ERROR: No README data found!",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aruberto/react-foundation-components.git"
+  },
+  "scripts": {
+    "build": "npm run clean && babel --quiet src --out-dir lib && cpy \"**/*.scss\" ../lib --parents --cwd=src && node create-flex-components.js && node create-global-scoped-components.js",
+    "build-docs": "npm run clean && npm run build && webpack --config docs/webpack.config.js",
+    "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s",
+    "clean": "rimraf lib docs/lib",
+    "lint": "eslint src && eslint docs && eslint examples && sass-lint --verbose",
+    "release-minor": "npm run build && release-it minor",
+    "release-patch": "npm run build && release-it",
+    "start": "node server.js",
+    "start-docs": "npm run build && node server.js docs/webpack.config.js --dev",
+    "start-examples-cdn": "npm run build && node server.js examples/cdn/webpack.config.js",
+    "start-examples-cdn-flex": "npm run build && node server.js examples/cdn-flex/webpack.config.js",
+    "start-examples-css-modules": "npm run build && node server.js examples/css-modules/webpack.config.js",
+    "start-examples-css-modules-custom": "npm run build && node server.js examples/css-modules-custom/webpack.config.js",
+    "start-examples-global": "npm run build && node server.js examples/global/webpack.config.js",
+    "start-examples-global-flex": "npm run build && node server.js examples/global-flex/webpack.config.js"
+  },
+  "version": "0.10.2"
+}
